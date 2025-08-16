@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora productora de yogurt frutado</title>
     <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- PWA: Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6c63ff">
 </head>
 
 <body>
@@ -110,8 +114,14 @@
     </footer>
     
     <script src="js/script.js"></script>
+
+    <!-- PWA: Registro del Service Worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => console.log("✅ Service Worker registrado"))
+                .catch(err => console.error("❌ Error al registrar SW:", err));
+        }
+    </script>
 </body>
 </html>
-
-
-
