@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora productora de yogurt frutado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logooo.jpg" alt="UNATA" style="border-radius: 100%; width: 190px; height: auto;">
+        <h1>Calculadora productora de yogurt frutado</h1>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info.html">¿Quiénes somos?</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Saludo">
+            <h2>Bienvenido en este aplicativo usted podrá ver lo siguiente:</h2>
+            <ul>
+                <li>La cantidad de recipientes que deberá elaborar en base a su producción de 3 meses.</li>
+                <li>La cantidad de insumos para la elaboración del total de vasos de yogurt.</li>
+            </ul>
+            <br>
+            <h2>Pasos a realizar:</h2>
+            <ul>
+                <li>Primero deberá ingresar en cada recuadro el total de vasos de las producciones pasadas.</li>
+                <li>Segundo presionar el botón azul "Calcular".</li>
+                <li>Esperar los resultados.</li>
+            </ul>
+        </section>
+
+        <section id="Entrada">
+            <h2>Ingrese el número de vasos producidos en los últimos 3 meses:</h2>
+            <div class="inputs-container">
+                <input type="number" id="mes1" name="mes1" min="0" max="99999" placeholder="Mes 1" required>
+                <input type="number" id="mes2" name="mes2" min="0" max="99999" placeholder="Mes 2" required>
+                <input type="number" id="mes3" name="mes3" min="0" max="99999" placeholder="Mes 3" required>
+            </div>
+            <div class="resultado">
+                <label>Promedio de producción (en vasos):</label>
+                <output id="promedio">-</output>
+                <br>
+                <span id="promedioExacto"></span>
+            </div>
+            <button id="calcular">Calcular</button>
+        </section>
+
+        <section id="Salida" style="display: none;">
+            <h2>Para la producción de <span id="promedioRedondeado"></span> vasos de yogurt se necesitará:</h2>
+            <ul>
+                <li><span id="leche"></span></li>
+                <li><span id="azucar"></span></li>
+                <li><span id="pulpaFruta"></span></li>
+                <li><span id="azucarPulpaFruta"></span></li>
+            </ul>
+
+            <div class="composicion-vaso">
+                <h3>Composición por vaso de yogurt:</h3>
+                <ul>
+                    <li><strong>El 60% es:</strong></li>
+                    <ul>
+                        <li>Leche por vaso: <span id="lechePorVaso"></span> g</li>
+                        <li>Azúcar por vaso: <span id="azucarPorVaso"></span> g</li>
+                    </ul>
+                    <li><strong>El 40% es:</strong></li>
+                    <ul>
+                        <li>Pulpa de fruta por vaso: <span id="pulpaFrutaPorVaso"></span> g</li>
+                        <li>Azúcar de la pulpa de fruta por vaso: <span id="azucarPulpaFrutaPorVaso"></span> g</li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class='pie'>
+        <div class='arriba'>
+            <article class='div-footer'>
+                <ul class="li-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="info.html">¿Quiénes somos?</a></li>
+                    <li><a href="https://www.gob.pe/unaat" target="_blank">UNAAT</a></li>
+                </ul>
+            </article>
+            <article class='div-footer'>
+                <h3 style="color: white; font-size: 25px; margin-bottom: 30px;">Redes UNAAT</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/Unaat.Oficial" target="_blank"><img class="img" src="img/fb.jpg" alt="Facebook"></a>
+                    <a href="https://www.tiktok.com/@unaat_oficial" target="_blank"><img class="img" src="img/tt.jpg" alt="Tiktok"></a>
+                    <a href="https://www.instagram.com/unaat_oficial/"><img class="img" src="img/ig.jpg" alt="Instagram"></a>
+                    <a href="https://youtube.com/@unaat_oficial?si=ZGGKAR-eISrQC1X_" target="_blank"><img class="img" src="img/yt.jpg" alt="Youtube"></a>
+                </div>
+            </article>
+            <article class='div-footer'>
+                <a href="https://admision.unaat.edu.pe/">
+                    <img class="LOGO" src="img/LOGO UNAT.jpg" alt="LOGOUNAT" style="border-radius: 100%; width: 190px; height: auto;">
+                </a>
+            </article>
+        </div>
+        <p id='año'>
+            Tarma - Junín - Perú
+            <br>
+            18 / 08 / 25
+        </p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

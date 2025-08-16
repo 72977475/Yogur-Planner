@@ -1,0 +1,342 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0; 
+    padding: 0; 
+    background-image: url('img/fondo.jpg'); /* url*/
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Header */
+header {
+    background-color: #42214B;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0; 
+    width: 100%; 
+    position: relative; 
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* nav */
+nav {
+    background-color: #28297f;
+    padding: 20px; 
+    margin: 0; 
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #34337a; 
+    border-radius: 5px;
+}
+
+/* Secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #34337a; 
+}
+
+/* Sección Saludo */
+#Saludo h2 {
+    font-size: 35px; 
+    color: #34337a;
+    margin-bottom: 20px;
+}
+
+#Saludo ul {
+    font-size: 20px; 
+    color: #333;
+    margin-left: 20px;
+    list-style-type: circle; /* Viñetas como círculos */
+    padding-left: 20px; /* Espacio a la izquierda para que se vean las viñetas */
+}
+
+#Saludo li {
+    font-size: 20px; 
+    color: #333;
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+/* Entrada */
+#Entrada {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+#Entrada h2 {
+    font-size: 35px; 
+    color: #34337a;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los inputs */
+.inputs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.inputs-container input {
+    width: 100%;
+    max-width: 150px; 
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Contenedor de la respuesta (output) */
+.resultado {
+    margin-top: 20px;
+}
+
+.resultado label {
+    font-size: 30px; 
+    color: #34337a;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el output (respuesta) */
+output {
+    font-size: 30px; 
+    color: #34337a;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo del botón */
+#calcular {
+    background-color: #34337a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 25px; 
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#calcular:hover {
+    background-color: #28297f; 
+}
+
+/* Resultados de la producción */
+#Salida {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#Salida h2 {
+    font-size: 35px;
+    color: #34337a;
+    margin-bottom: 20px;
+}
+
+/* Listas de los resultados en la sección Salida */
+#Salida ul {
+    list-style-type: circle; /* Viñetas como círculos */
+    padding-left: 20px; /* Espacio a la izquierda para que se vean las viñetas */
+}
+
+#Salida li {
+    font-size: 20px; 
+    color: #333;
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.resultado-item {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.resultado-item span {
+    font-weight: bold;
+    color: #34337a;
+}
+
+.composicion-vaso {
+    margin-top: 30px;
+}
+
+.composicion-vaso h3 {
+    font-size: 28px;
+    color: #34337a;
+    margin-bottom: 10px;
+}
+
+.composicion-vaso ul {
+    list-style-type: circle; /* Viñetas como círculos */
+    font-size: 22px;
+    color: #333;
+    padding-left: 20px;
+}
+
+.composicion-vaso ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.pie {
+  width: 100%;
+  background-color: #42214B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0; 
+}
+
+.arriba {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.img {
+  width: 45px;     
+  height: 45px;     
+  margin: 0 15px;  
+  transition: transform 0.3s;
+  border-radius: 50%;  
+  object-fit: cover;  
+}
+
+.img:hover {
+  transform: scale(1.1);  
+}
+
+.li-footer {
+  padding: 0;
+  list-style: circle;
+}
+
+.li-footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 25px;
+  list-style: circle;
+}
+
+.li-footer a:hover {
+  color: #566fed;
+}
+
+#año {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #menuF {
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    #lugar {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    footer a img {
+        width: 150px;
+    }
+}
+
+/* Estilo para pantallas medianas (tabletas) */
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+    }
+
+    #menuF {
+        flex-direction: row; 
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    footer a img {
+        width: 180px; 
+    }
+}
