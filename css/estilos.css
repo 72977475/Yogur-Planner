@@ -340,3 +340,20 @@ output {
         width: 180px; 
     }
 }
+
+/* Responsive para el menú de navegación */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;   /* Menú en columna */
+        align-items: center;      /* Centrado */
+    }
+
+    nav ul li {
+        margin: 10px 0;           /* Más espacio entre opciones */
+    }
+
+    nav ul li a {
+        font-size: 20px;          /* Un poco más pequeño en móvil */
+        padding: 8px 12px;
+    }
+}
