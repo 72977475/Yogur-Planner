@@ -3,7 +3,7 @@
     "short_name": "Yogur",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#ffffff",
+    "background_color": "#faf3e1",
     "theme_color": "#42214B",
     "orientation": "portrait",
     "icons": [
